@@ -14,16 +14,33 @@ body::before {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background-image: url("forest.jpg");
+    height: 106.5vh;
+    background-image: url("./L3.jpg");
     background-size: cover;
     background-blend-mode: overlay;
     opacity: 0.8;
     z-index: -1;
 }
 
+::-webkit-scrollbar {
+    width: 0.3rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #328336;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 .header {
-    width: 96.7vw;
+    width: 99.7vw;
     text-align: center;
     background: linear-gradient(to right, #4CAF50, #2E7D32);
     padding: 20px;
@@ -43,41 +60,52 @@ body::before {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     text-align: justify;
     width: 400px;
-    margin-top: 4REM;
+    color: rgb(54, 54, 54);
+    line-height: 25px;
+    margin-top: 2rem;
 }
 
 .about-us h2 {
     color: #4CAF50;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 600;
     margin-top: 0rem;
 }
 
 .container {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(13, 13, 13, 0.9);
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     text-align: center;
     width: 400px;
     margin-top: 20px;
+    height: 290px;
+}
+
+.fa-upload {
+    margin-right: 15px;
 }
 
 .upload-text {
     text-align: justify;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
-    color: #4CAF50;
+    color: white;
     margin-top: 0rem;
 }
 
 .upload-box {
-    border: 2px dashed #ccc;
+    background-color: hsl(0, 0%, 17%); /* Dark background color */
+    padding: 9px;
+    align-items: center;
     border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
+    border: 2px dashed #aaa; /* Dashed border to indicate drop area */
+    text-align: center;
     position: relative;
-    transition: 0.3s ease;
+    width: 21rem;
+    height: 3rem;
+    font-size: 0.6rem;
 }
 
 .upload-box:hover {
@@ -137,11 +165,12 @@ input[type="file"] {
     border: none;
     background-color: #4CAF50;
     color: white;
+    margin-top: 1rem;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: s0.3s ease;
 }
 
 .classify-btn:hover {
@@ -167,13 +196,14 @@ input[type="file"] {
 }
 
 footer {
-    margin-top: 20px;
+    margin-top: 15px;
     background-color: #333;
     color: white;
     padding: 10px;
     text-align: center;
-    width: 100%;
+    width: 99.7vw;
     position: relative;
+    margin-top: 0.rem;
     bottom: 0;
 }
 
